@@ -1,0 +1,35 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+b,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "MonumentExtended";
+}
+
+a,
+p,
+span,
+b,
+ul,
+li {
+  font-family: "Montserrat";
+}
+
+@import './variables.scss';
+@import './fonts.scss';
