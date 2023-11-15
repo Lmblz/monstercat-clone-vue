@@ -79,15 +79,14 @@ export default {
   &.-has-children {
     .item__wrapper {
       display: flex;
+      align-items: center;
 
       .item__icon {
         position: relative;
 
         img {
-          position: absolute;
           filter: invert(1);
-          top: 50%;
-          transform: translateY(-58%);
+          transition: all 0.5s;
         }
       }
     }
@@ -99,6 +98,13 @@ export default {
     }
 
     &.-active {
+      .item__wrapper {
+        .item__icon {
+          img {
+            transform: rotate(-90deg);
+          }
+        }
+      }
       .item__children {
         padding-top: 1rem;
         height: calc(var(--height-children) - 0.5rem);
