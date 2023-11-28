@@ -52,5 +52,31 @@ h2 {
   font-size: 45px;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border: 0;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #120f11;
+  border: 0;
+  border-radius: 0px;
+}
+
 @import './variables.scss';
 @import './fonts.scss';
