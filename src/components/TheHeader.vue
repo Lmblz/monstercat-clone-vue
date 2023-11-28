@@ -19,7 +19,7 @@
         <div class="right-side__social-networks">
           <ul class="social-networks__list">
             <li class="list__item" v-for="network in ListSocialNetworks" :key="network.id">
-              <a :href="network.pictoUrl">
+              <a :href="network.linkUrl">
                 <img :src="network.pictoUrl" :alt="network.name" />
               </a>
             </li>
@@ -44,37 +44,37 @@ export default {
         Instagram: {
           id: 0,
           name: 'Instagram',
-          linkUrl: '/',
+          linkUrl: 'https://www.instagram.com/monstercat/',
           pictoUrl: '/IconInstagram.svg'
         },
         TikTok: {
           id: 1,
           name: 'TikTok',
-          linkUrl: '/',
+          linkUrl: 'https://www.tiktok.com/@monstercat',
           pictoUrl: '/IconTikTok.svg'
         },
         Twitter: {
           id: 2,
           name: 'Twitter',
-          linkUrl: '/',
+          linkUrl: 'https://twitter.com/monstercat',
           pictoUrl: '/IconTwitter.svg'
         },
         Twitch: {
           id: 3,
           name: 'Twitch',
-          linkUrl: '/',
+          linkUrl: 'https://www.twitch.tv/monstercat',
           pictoUrl: '/IconTwitch.svg'
         },
         Facebook: {
           id: 4,
           name: 'Facebook',
-          linkUrl: '/',
+          linkUrl: 'https://www.facebook.com/monstercat',
           pictoUrl: '/IconFacebook.svg'
         },
         Discord: {
           id: 5,
           name: 'Discord',
-          linkUrl: '/',
+          linkUrl: 'https://discord.com/invite/monstercat',
           pictoUrl: '/IconDiscord.svg'
         }
       }
@@ -117,8 +117,10 @@ header {
       }
 
       .right-side__social-networks {
+        margin-top: 3rem;
         .social-networks__list {
           .list__item {
+            margin-bottom: 1rem;
             list-style: none;
           }
         }
