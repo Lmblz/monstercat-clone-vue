@@ -18,7 +18,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+.font-monument {
   font-family: "MonumentExtended";
 }
 
@@ -27,8 +28,28 @@ p,
 span,
 b,
 ul,
-li {
+li,
+figcaption,
+strong {
   font-family: "Montserrat";
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  letter-spacing: .1em;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: #F1F1F1;
+  -webkit-text-fill-color: transparent;
+  text-stroke-width: .1px;
+  text-stroke-color: #F1F1F1;
+  text-fill-color: transparent;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 45px;
 }
 
 @import './variables.scss';

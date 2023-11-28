@@ -96,9 +96,11 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
   padding: 1.5rem 2rem;
+  width: calc(100% - 4rem);
+  z-index: 5;
 
   .header__wrapper {
     display: flex;
@@ -118,9 +120,6 @@ header {
         .social-networks__list {
           .list__item {
             list-style: none;
-
-            a {
-            }
           }
         }
       }
