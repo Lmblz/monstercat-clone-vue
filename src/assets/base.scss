@@ -21,6 +21,7 @@ h4,
 h5,
 .font-monument {
   font-family: "MonumentExtended";
+  letter-spacing: .1em;
 }
 
 a,
@@ -30,8 +31,13 @@ b,
 ul,
 li,
 figcaption,
-strong {
+strong,
+input {
   font-family: "Montserrat";
+
+  &.infos {
+    font-size: .75rem;
+  }
 }
 
 h1 {
