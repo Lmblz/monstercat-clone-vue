@@ -51,6 +51,20 @@
           <TrackList :data="tracklistData" />
         </div>
       </div>
+      <div class="main__video">
+        <h2>Music Video</h2>
+        <div class="video__player">
+          <iframe
+            width="1568"
+            height="882"
+            src="https://www.youtube.com/embed/7nObtWENgxA"
+            title="Conro - Therapy [Monstercat Lyric Video]"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -249,7 +263,7 @@ export default {
   }
 
   .content__main {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 7rem auto 0;
 
     .main__top {
@@ -277,6 +291,19 @@ export default {
 
         h2 {
           margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .main__video {
+      margin-top: 5rem;
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+      .video__player {
+        iframe {
+          width: 100%;
         }
       }
     }
